@@ -9,10 +9,12 @@
     <EditText
         android:id="@+id/editText"
         android:layout_width="0dp"
-        android:layout_height="111dp"
+        android:layout_height="94dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:inputType="number"
+        android:textAlignment="textEnd"
+        android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
@@ -44,13 +46,15 @@
         android:id="@+id/clear"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:text="@string/clear"
         app:layout_constraintBottom_toBottomOf="@+id/memclear"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/memclear"
         app:layout_constraintStart_toStartOf="@+id/subtraction"
-        app:layout_constraintTop_toTopOf="@+id/memclear" />
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/multiplication"
@@ -67,27 +71,30 @@
         android:id="@+id/subtraction"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:text="@string/subtraction"
         app:layout_constraintBottom_toBottomOf="@+id/multiplication"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/multiplication"
         app:layout_constraintStart_toStartOf="@+id/addition"
-        app:layout_constraintTop_toTopOf="@+id/multiplication" />
+        app:layout_constraintTop_toBottomOf="@+id/clear"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/addition"
         android:layout_width="wrap_content"
-        android:layout_height="109dp"
+        android:layout_height="112dp"
         android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp"
         android:text="@string/addition"
         app:layout_constraintBottom_toTopOf="@+id/equal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/num6"
         app:layout_constraintStart_toStartOf="@+id/equal"
-        app:layout_constraintTop_toBottomOf="@+id/subtraction" />
+        app:layout_constraintTop_toBottomOf="@+id/subtraction"
+        app:layout_constraintVertical_bias="0.47" />
 
     <Button
         android:id="@+id/division"
@@ -125,10 +132,11 @@
     <Button
         android:id="@+id/equal"
         android:layout_width="wrap_content"
-        android:layout_height="105dp"
+        android:layout_height="114dp"
+        android:layout_marginBottom="8dp"
         android:text="@string/equal"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="547dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/num7"
@@ -200,7 +208,6 @@
         android:id="@+id/num1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="buttonHandler"
         android:text="@string/num1"
         app:layout_constraintBottom_toTopOf="@+id/num0"
         app:layout_constraintEnd_toStartOf="@+id/num2"
@@ -237,7 +244,6 @@
         android:layout_height="48dp"
         android:layout_marginBottom="16dp"
         android:layout_marginStart="8dp"
-        android:onClick="buttonHandler"
         android:text="@string/num0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_chainStyle="spread_inside"
@@ -247,7 +253,7 @@
         android:id="@+id/period"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="12dp"
+        android:layout_marginEnd="8dp"
         android:text="@string/period"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/equal"
