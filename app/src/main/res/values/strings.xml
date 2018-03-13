@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Calculator</string>
+    <string name="editText">0</string>
     <string name="num1">1</string>
     <string name="num2">2</string>
     <string name="num3">3</string>

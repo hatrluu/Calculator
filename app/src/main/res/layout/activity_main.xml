@@ -13,6 +13,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:inputType="number"
+        android:text="@string/editText"
         android:textAlignment="textEnd"
         android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,7 +23,7 @@
 
     <Button
         android:id="@+id/memrecall"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/memrecall"
         app:layout_constraintBottom_toTopOf="@+id/num7"
@@ -33,7 +34,7 @@
 
     <Button
         android:id="@+id/memclear"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/memclear"
         app:layout_constraintBottom_toTopOf="@+id/multiplication"
@@ -44,7 +45,7 @@
 
     <Button
         android:id="@+id/clear"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="@string/clear"
@@ -58,7 +59,7 @@
 
     <Button
         android:id="@+id/multiplication"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/multiplication"
         app:layout_constraintBottom_toTopOf="@+id/num9"
@@ -69,21 +70,18 @@
 
     <Button
         android:id="@+id/subtraction"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:text="@string/subtraction"
-        app:layout_constraintBottom_toBottomOf="@+id/multiplication"
+        app:layout_constraintBaseline_toBaselineOf="@+id/multiplication"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/multiplication"
-        app:layout_constraintStart_toStartOf="@+id/addition"
-        app:layout_constraintTop_toBottomOf="@+id/clear"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintStart_toStartOf="@+id/addition" />
 
     <Button
         android:id="@+id/addition"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="112dp"
         android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp"
@@ -98,7 +96,7 @@
 
     <Button
         android:id="@+id/division"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/division"
         app:layout_constraintBottom_toTopOf="@+id/num8"
@@ -109,7 +107,7 @@
 
     <Button
         android:id="@+id/memsub"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/memsub"
         app:layout_constraintBottom_toTopOf="@+id/division"
@@ -120,7 +118,7 @@
 
     <Button
         android:id="@+id/memadd"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/memadd"
         app:layout_constraintBottom_toTopOf="@+id/memrecall"
@@ -133,14 +131,14 @@
         android:id="@+id/equal"
         android:layout_width="wrap_content"
         android:layout_height="114dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="24dp"
         android:text="@string/equal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/num7"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/num7"
         app:layout_constraintBottom_toTopOf="@+id/num4"
@@ -151,7 +149,7 @@
 
     <Button
         android:id="@+id/num8"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/num8"
         app:layout_constraintBottom_toTopOf="@+id/num5"
@@ -162,7 +160,7 @@
 
     <Button
         android:id="@+id/num9"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/num9"
         app:layout_constraintBottom_toTopOf="@+id/num6"
@@ -173,7 +171,7 @@
 
     <Button
         android:id="@+id/num4"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/num4"
         app:layout_constraintBottom_toTopOf="@+id/num1"
@@ -184,7 +182,7 @@
 
     <Button
         android:id="@+id/num5"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/num5"
         app:layout_constraintBottom_toTopOf="@+id/num2"
@@ -195,7 +193,7 @@
 
     <Button
         android:id="@+id/num6"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/num6"
         app:layout_constraintBottom_toTopOf="@+id/num3"
@@ -206,7 +204,7 @@
 
     <Button
         android:id="@+id/num1"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/num1"
         app:layout_constraintBottom_toTopOf="@+id/num0"
@@ -218,7 +216,7 @@
 
     <Button
         android:id="@+id/num2"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/num2"
         app:layout_constraintBottom_toTopOf="@+id/num0"
@@ -229,7 +227,7 @@
 
     <Button
         android:id="@+id/num3"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/num3"
         app:layout_constraintBottom_toTopOf="@+id/period"
@@ -255,8 +253,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:text="@string/period"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/equal"
-        app:layout_constraintTop_toBottomOf="@+id/num3" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/num0"
+        app:layout_constraintEnd_toStartOf="@+id/equal" />
 
 </android.support.constraint.ConstraintLayout>
