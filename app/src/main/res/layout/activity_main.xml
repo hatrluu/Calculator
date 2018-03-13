@@ -9,97 +9,89 @@
     <EditText
         android:id="@+id/editText"
         android:layout_width="0dp"
-        android:layout_height="94dp"
+        android:layout_height="114dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:cursorVisible="false"
+        android:fontFamily="serif"
         android:inputType="number"
+        android:singleLine="true"
         android:text="@string/editText"
         android:textAlignment="textEnd"
-        android:textSize="36sp"
+        android:textSize="50sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
     </EditText>
 
     <Button
         android:id="@+id/memrecall"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/memrecall"
-        app:layout_constraintBottom_toTopOf="@+id/num7"
+        app:layout_constraintBaseline_toBaselineOf="@+id/division"
         app:layout_constraintEnd_toStartOf="@+id/division"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/memadd" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/memclear"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/memclear"
-        app:layout_constraintBottom_toTopOf="@+id/multiplication"
+        app:layout_constraintBaseline_toBaselineOf="@+id/memsub"
         app:layout_constraintEnd_toStartOf="@+id/clear"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/memsub"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintStart_toEndOf="@+id/memsub" />
 
     <Button
         android:id="@+id/clear"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:text="@string/clear"
-        app:layout_constraintBottom_toBottomOf="@+id/memclear"
+        app:layout_constraintBaseline_toBaselineOf="@+id/memclear"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/memclear"
-        app:layout_constraintStart_toStartOf="@+id/subtraction"
-        app:layout_constraintTop_toBottomOf="@+id/editText"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/memclear" />
 
     <Button
         android:id="@+id/multiplication"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/multiplication"
-        app:layout_constraintBottom_toTopOf="@+id/num9"
+        app:layout_constraintBaseline_toBaselineOf="@+id/division"
         app:layout_constraintEnd_toStartOf="@+id/subtraction"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/division"
-        app:layout_constraintTop_toBottomOf="@+id/memclear" />
+        app:layout_constraintStart_toEndOf="@+id/division" />
 
     <Button
         android:id="@+id/subtraction"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/subtraction"
         app:layout_constraintBaseline_toBaselineOf="@+id/multiplication"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/multiplication"
-        app:layout_constraintStart_toStartOf="@+id/addition" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/memclear" />
 
     <Button
         android:id="@+id/addition"
-        android:layout_width="0dp"
-        android:layout_height="112dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="@string/addition"
-        app:layout_constraintBottom_toTopOf="@+id/equal"
+        app:layout_constraintBaseline_toBaselineOf="@+id/num9"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/num6"
-        app:layout_constraintStart_toStartOf="@+id/equal"
-        app:layout_constraintTop_toBottomOf="@+id/subtraction"
-        app:layout_constraintVertical_bias="0.47" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/multiplication" />
 
     <Button
         android:id="@+id/division"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:text="@string/division"
-        app:layout_constraintBottom_toTopOf="@+id/num8"
         app:layout_constraintEnd_toStartOf="@+id/multiplication"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/memrecall"
@@ -107,10 +99,10 @@
 
     <Button
         android:id="@+id/memsub"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
         android:text="@string/memsub"
-        app:layout_constraintBottom_toTopOf="@+id/division"
         app:layout_constraintEnd_toStartOf="@+id/memclear"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/memadd"
@@ -118,41 +110,40 @@
 
     <Button
         android:id="@+id/memadd"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/memadd"
-        app:layout_constraintBottom_toTopOf="@+id/memrecall"
+        app:layout_constraintBaseline_toBaselineOf="@+id/memsub"
         app:layout_constraintEnd_toStartOf="@+id/memsub"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/equal"
         android:layout_width="wrap_content"
-        android:layout_height="114dp"
-        android:layout_marginBottom="24dp"
+        android:layout_height="wrap_content"
         android:text="@string/equal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/num3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/num3" />
 
     <Button
         android:id="@+id/num7"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/num7"
-        app:layout_constraintBottom_toTopOf="@+id/num4"
+        app:layout_constraintBaseline_toBaselineOf="@+id/num8"
         app:layout_constraintEnd_toStartOf="@+id/num8"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/memrecall" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/num8"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:text="@string/num8"
-        app:layout_constraintBottom_toTopOf="@+id/num5"
         app:layout_constraintEnd_toStartOf="@+id/num9"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/num7"
@@ -160,32 +151,30 @@
 
     <Button
         android:id="@+id/num9"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/num9"
-        app:layout_constraintBottom_toTopOf="@+id/num6"
+        app:layout_constraintBaseline_toBaselineOf="@+id/num8"
         app:layout_constraintEnd_toStartOf="@+id/addition"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/num8"
-        app:layout_constraintTop_toBottomOf="@+id/multiplication" />
+        app:layout_constraintStart_toEndOf="@+id/num8" />
 
     <Button
         android:id="@+id/num4"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/num4"
-        app:layout_constraintBottom_toTopOf="@+id/num1"
+        app:layout_constraintBaseline_toBaselineOf="@+id/num5"
         app:layout_constraintEnd_toStartOf="@+id/num5"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/num7" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/num5"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:text="@string/num5"
-        app:layout_constraintBottom_toTopOf="@+id/num2"
         app:layout_constraintEnd_toStartOf="@+id/num6"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/num4"
@@ -193,33 +182,30 @@
 
     <Button
         android:id="@+id/num6"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/num6"
-        app:layout_constraintBottom_toTopOf="@+id/num3"
-        app:layout_constraintEnd_toStartOf="@+id/addition"
+        app:layout_constraintBaseline_toBaselineOf="@+id/num5"
+        app:layout_constraintEnd_toStartOf="@+id/equal"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/num5"
-        app:layout_constraintTop_toBottomOf="@+id/num9" />
+        app:layout_constraintStart_toEndOf="@+id/num5" />
 
     <Button
         android:id="@+id/num1"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/num1"
-        app:layout_constraintBottom_toTopOf="@+id/num0"
+        app:layout_constraintBaseline_toBaselineOf="@+id/num2"
         app:layout_constraintEnd_toStartOf="@+id/num2"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintHorizontal_chainStyle="spread"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/num4" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/num2"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:text="@string/num2"
-        app:layout_constraintBottom_toTopOf="@+id/num0"
         app:layout_constraintEnd_toStartOf="@+id/num3"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/num1"
@@ -227,33 +213,33 @@
 
     <Button
         android:id="@+id/num3"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/num3"
-        app:layout_constraintBottom_toTopOf="@+id/period"
+        app:layout_constraintBaseline_toBaselineOf="@+id/num2"
         app:layout_constraintEnd_toStartOf="@+id/equal"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/num2"
-        app:layout_constraintTop_toBottomOf="@+id/num6" />
+        app:layout_constraintStart_toEndOf="@+id/num2" />
 
     <Button
         android:id="@+id/num0"
-        android:layout_width="182dp"
-        android:layout_height="48dp"
-        android:layout_marginBottom="16dp"
-        android:layout_marginStart="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="@string/num0"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintBaseline_toBaselineOf="@+id/period"
+        app:layout_constraintEnd_toStartOf="@+id/period"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/period"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
         android:text="@string/period"
-        app:layout_constraintBaseline_toBaselineOf="@+id/num0"
-        app:layout_constraintEnd_toStartOf="@+id/equal" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/num0"
+        app:layout_constraintTop_toBottomOf="@+id/num2" />
 
 </android.support.constraint.ConstraintLayout>
